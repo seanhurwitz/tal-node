@@ -3,6 +3,7 @@ var num1 = 3; //ES5
 console.log('num1', num1);
 
 let num2 = 4; //ES6
+num2 = 'Hello';
 
 console.log(`num2`, num2);
 
