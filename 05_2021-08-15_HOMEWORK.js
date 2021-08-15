@@ -1,4 +1,4 @@
-// This will test your skills of varibles and conditionals
+// This will test your skills of variables and conditionals
 /* 
 SPEC
 -- I want to go for a RUN! But I want to know if I CAN!
