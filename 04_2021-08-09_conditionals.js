@@ -45,15 +45,61 @@ if (typeof currentHour !== 'number') {
 Conditional operators
 
 == - DO NOT USE!
-===
+=== - ALWAYS use. Unique to javascript - checks TYPE as well
 
 != - DO NOT USE!
-!==
+!== - ALWAYS USE - checks TYPE
 
 &&
 ||
+!
 
 */
 
-console.log(1 == 1);
-console.log(1 == '1');
+// EXPLAINING =, ==, ===
+
+const number = 3;
+const isNumber3 = number == '3';
+
+if (isNumber3) {
+  console.log('NUMBER IS EQUAL TO 3????');
+}
+
+const newNumber = 5;
+const isNewNumber5 = newNumber === 5;
+
+if (isNewNumber5) {
+  console.log('THIS NUMBER IS TRULY FIVE!');
+}
+
+// const thirdNumber = 8;
+// const isThirdNumberNot8 = thirdNumber != '8'; //opposite equivalent of ==
+// console.log(isThirdNumberNot8);
+
+const thirdNumber = 8;
+const isThirdNumberNot8 = thirdNumber !== '8'; //opposite equivalent of ===
+console.log(isThirdNumberNot8);
+
+// thought process to buy an ice cream.
+// is it a hot day?
+// am I fleishik?
+
+const isHotDay = true;
+const amIMilchik = false;
+const amIHungry = true;
+
+if (isHotDay && amIMilchik && amIHungry) {
+  console.log('buy ice cream');
+} else {
+  console.log('too bad');
+}
+
+console.log(true && false);
+console.log(true && true && true && true && false); //ALL need to be true
+
+console.log(true || false || false || false || false || false); // at least ONE needs to be true
+
+//BODMAS: multiply before adding
+//SO TOO: && BEFORE ||
+
+console.log(true && (false || false));
