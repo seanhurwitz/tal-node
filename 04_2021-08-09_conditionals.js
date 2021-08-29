@@ -100,6 +100,6 @@ console.log(true && true && true && true && false); //ALL need to be true
 console.log(true || false || false || false || false || false); // at least ONE needs to be true
 
 //BODMAS: multiply before adding
-//SO TOO: && BEFORE ||
+//SO TOO: "&&" BEFORE "||"
 
 console.log(true && (false || false));
